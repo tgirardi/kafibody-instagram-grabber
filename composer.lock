@@ -1,0 +1,49 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "7c9cd70f8472eac4c3195ef10582fdc6",
+    "content-hash": "1c89f5d1a237130c4932024a1142ee03",
+    "packages": [
+        {
+            "name": "bolandish/instagram-grabber",
+            "version": "1.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Bolandish/Instagram-Grabber.git",
+                "reference": "2449912ced0606e2a6180f9acc18205acddd23e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Bolandish/Instagram-Grabber/zipball/2449912ced0606e2a6180f9acc18205acddd23e9",
+                "reference": "2449912ced0606e2a6180f9acc18205acddd23e9",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bolandish\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Thomas Bolander",
+                    "email": "privat@thomasbolander.dk"
+                }
+            ],
+            "description": "A workaround for the new Instagram policy to get images by hashtag and user id. No need for accesstoken",
+            "time": "2016-06-14 08:37:10"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

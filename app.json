@@ -1,0 +1,10 @@
+{
+  "name": "Kafibody Instagram Grabber",
+  "description": "Entrega un JSON con los últimos posts del instagram del Kafibody",
+  "repository": "https://git.heroku.com/kafibody-instagram-grabber.git",
+  "addons": [],
+  "env": {
+    "CLIENT_ID": "2880288768",
+    "POST_COUNT": 15
+  }
+}
