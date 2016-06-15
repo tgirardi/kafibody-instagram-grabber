@@ -4,7 +4,13 @@
   "repository": "https://git.heroku.com/kafibody-instagram-grabber.git",
   "addons": [],
   "env": {
-    "CLIENT_ID": "2880288768",
-    "POST_COUNT": 15
+    "USER_ID": {
+      "description": "ID del usuario según instagram",
+      "value": "2880288768"
+    },
+    "POST_COUNT": {
+      "description": "Cantidad de posts a obtener",
+      "value": "15"
+    }
   }
 }
