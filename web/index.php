@@ -3,7 +3,6 @@
 require('../vendor/autoload.php');
 
 // entrega el resultado
-echo json_encode(
+echo 'kafibodyInstagramGrabber(' .
   Bolandish\Instagram::getMediaByUserID(getenv('USER_ID'),
-    getenv('POST_COUNT'))
-);
+    getenv('POST_COUNT')) . ')';
