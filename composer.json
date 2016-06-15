@@ -1,6 +1,8 @@
 {
     "require": {
-        "bolandish/instagram-grabber": "^1.0"
+        "bolandish/instagram-grabber": "^1.0",
+        "ext-apcu": "^4.0",
+        "monolog/monolog": "^1.19"
     },
     "config": {
       "optimize-autoloader": true
