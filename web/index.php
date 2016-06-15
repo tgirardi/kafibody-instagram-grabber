@@ -12,7 +12,7 @@ $log->pushHandler(new StreamHandler('php://stderr', Logger::INFO));
 $log->addInfo('Atendiendo petición');
 
 // intentamos obtener los datos desde el apc cache
-$jsonData = apc_get('jsonData');
+$jsonData = apc_fetch('jsonData');
 
 if(!$jsonData) {
   $log->addInfo('Datos obtenidos desde apc cache');
