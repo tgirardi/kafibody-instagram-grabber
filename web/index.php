@@ -5,7 +5,7 @@ require('../vendor/autoload.php');
 // para logs
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
-$log = new Logger('name');
+$log = new Logger('app');
 $log->pushHandler(new StreamHandler('php://stderr', Logger::INFO));
 
 // loggeamos la nueva petición
@@ -14,7 +14,7 @@ $log->addInfo('Atendiendo petición');
 // intentamos obtener los datos desde el apc cache
 $jsonData = apc_fetch('jsonData');
 
-if(!$jsonData) {
+if($jsonData) {
   $log->addInfo('Datos obtenidos desde apc cache');
 } else {
   $log->addInfo('Solicitando datos a instagram');
