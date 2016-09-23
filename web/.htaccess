@@ -2,7 +2,7 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.php [QSA,L]
 
-# ----------------------------------------------------------------------
+# --------------------------heroku create--------------------------------------------
 # | Media types                                                        |
 # ----------------------------------------------------------------------
 
@@ -241,12 +241,12 @@ ServerSignature Off
     ExpiresByType application/rdf+xml                   "access plus 1 hour"
     ExpiresByType application/rss+xml                   "access plus 1 hour"
 
-    ExpiresByType application/json                      "access plus 0 seconds"
-    ExpiresByType application/ld+json                   "access plus 0 seconds"
-    ExpiresByType application/schema+json               "access plus 0 seconds"
-    ExpiresByType application/vnd.geo+json              "access plus 0 seconds"
-    ExpiresByType application/xml                       "access plus 0 seconds"
-    ExpiresByType text/xml                              "access plus 0 seconds"
+    ExpiresByType application/json                      "access plus 1 hour"
+    ExpiresByType application/ld+json                   "access plus 1 hour"
+    ExpiresByType application/schema+json               "access plus 1 hour"
+    ExpiresByType application/vnd.geo+json              "access plus 1 hour"
+    ExpiresByType application/xml                       "access plus 1 hour"
+    ExpiresByType text/xml                              "access plus 1 hour"
 
 
   # Favicon (cannot be renamed!) and cursor images
@@ -256,7 +256,7 @@ ServerSignature Off
 
   # HTML
 
-    ExpiresByType text/html                             "access plus 0 seconds"
+    ExpiresByType text/html                             "access plus 1 hour"
 
 
   # JavaScript
