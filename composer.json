@@ -1,7 +1,7 @@
 {
     "require": {
-        "bolandish/instagram-grabber": "^1.0.13",
-        "ext-apcu": "^4.0",
+        "bolandish/instagram-grabber": "1.0.13",
+        "ext-apcu": "^5.1",
         "monolog/monolog": "^1.19"
     },
     "config": {
