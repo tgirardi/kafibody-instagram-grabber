@@ -30,7 +30,7 @@ if($jsonData) {
   $soma = 0;
   foreach ($json->user->media->nodes as $key => $value) {
       $soma++;
-      $jsonData .= '{"thumbnail_src":"'.$value->thumbnail_src.'","code": "'.$value->code.'","caption": "'.$value->caption.'}';
+      $jsonData .= '{"thumbnail_src":"'.$value->thumbnail_src.'","code": "'.$value->code.'","caption": "'.$value->caption.'"}';
       if($soma != $total){
          $jsonData .= ",";
       }
