@@ -25,18 +25,16 @@ if($jsonData) {
   $url = 'https://www.instagram.com/kafibody/?__a=1';
   $data = file_get_contents($url);
   $json = json_decode($data);
-  $jsonData = "[";
+  $array = array();
   $total = count($json->user->media->nodes);
-  $soma = 0;
   foreach ($json->user->media->nodes as $key => $value) {
-      $soma++;
-      $jsonData .= '{"thumbnail_src":"'.$value->thumbnail_src.'","code": "'.$value->code.'","caption": "'.$value->caption.'"}';
-      if($soma != $total){
-         $jsonData .= ",";
-      }
+    $newNode = array();
+    $newNode["thumbnail_src"] = $value->thumbnail_src;
+    $newNode["code"] = $value->code;
+    $newNode["caption"] = $value->caption;
+    $array[] = $newNode;
   }
-  $jsonData .= "]";
-  print_r(($jsonData));
+  $jsonData = json_encode($array);
 
   // los guardamos en el apc cache
   apc_store('jsonData20170712', $jsonData, 300);
